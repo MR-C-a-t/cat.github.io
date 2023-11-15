@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a+</title>
+    <link rel="stylesheet" href="acess\css\style.css">
+    <style>* {
+        margin: 0;
+        
+        padding: 0;
+      }
+      @font-face {
+        font-family:"Akrobat-Black" ;
+        src: url(acess\fonts\Akrobat-Black.otf);
+      }
+      @font-face {
+        font-family:"Heathergreen 2" ;
+        src: url(../fonts/Heathergreen\ 2.otf);
+      }
+      @font-face {
+        font-family:"Akrobat-ExtraBold" ;
+        src: url(../fonts/Akrobat-ExtraBold.otf);
+      }
+    header{
+        height: 100vh;
+        background-image: url("../img/bg-header.jpg");
+        background-size: cover;  
+        background-repeat: no-repeat; 
+        
+    }
+    .block_logo{
+        width: 10%;
+    }
+    nav {
+       
+        width: 80%;
+        height: 0px;
+        display: inline-flex;
+        margin-left: 15%;
+        
+    }
+    ul {
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 155%;
+        width: 80%;
+        height: 5vh;
+        display: inline-flex;
+        justify-content:space-between;
+        align-items: center;
+        list-style-type: none;
+       
+        
+    }
+    .program_obych:active{
+    color: #00000061;
+    }
+    .block_shapka{
+       
+        margin-top:3%;
+       width: 80%;
+        height: 60px; 
+    display: inline-flex;
+    justify-content:space-between;  
+    margin-left: 10%;
+    margin-right: 10%;
+     
+    }
+    .block_dwa_shapki{
+        display: inline-flex;
+        margin-top: 8%;
+         margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+    }
+    .block_dwa_shapki::before{
+        content: "";
+        position: absolute;
+        height: 600px;
+        background-size: cover;
+        width: 1200px;
+        z-index: 1;
+        top: 20px;
+        right: -520px;
+        background-image: url(../img/bg-promo.png);
+        background-repeat: no-repeat;
+    }
+    
+    .zagolovok{
+        position: relative;
+        z-index: 2;
+        width: 80%;
+       
+        width: 40%;
+    }
+    h1{
+        font-family: 'Akrobat-ExtraBold', Arial, sans-serif;
+        font-size: 450%;
+        width: 70vh;
+    }
+    #Obychaem_specialistov{
+        margin-top: 6vh;
+        font-size: 150%;
+        color: #000000af;
+        width: 180%;
+    }
+    #SHAPKA_ZAEVKA{
+       
+        padding: 2.8vh 12.5vh;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background:#29c06d;
+    color: #ffffff;
+    font-size: 5vh;
+    font-family: 'Akrobat-ExtraBold' ;
+    font-size: 120%;
+    margin-top: 6vh;
+      }
+      #SHAPKA_ZAEVKA:active{
+        background-color: #1e8f51;
+      }
+     section{
+        background-color: rgb(236, 239, 241);
+       height: 25vh;
+       
+       width: 100%;
+       
+     }
+     .block_paddin_headr{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: -4vh;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+     h3{
+        font-family: 'Akrobat-ExtraBold';
+     }
+     .bloo_imags{
+        margin-top: 2vh;
+        width: 31vh;
+        font-size: 2vh;
+     }
+    h3{
+        font-size: 2.5vh;
+    }
+    .block_alumni_reviews{
+        height: 40vh;
+        margin-top: 7vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .block_student_reviews{
+        display: flex;
+        justify-content: space-between;
+    }
+    .block_show_all{
+        display: flex;
+    }
+    #show_all{
+    color: #29c06d;
+    font-size: 4vh;
+    margin-left: 2vh;
+    height: 1vh;
+    text-decoration: none;
+    margin-top: -2vh;
+    }
+    #show_all:active{
+        color: #1e8f51;
+    }
+    .block_ivan{
+        display: flex;
+       margin-top: 6vh;
+    }
+    .block_name_ivan{
+        display: flex;
+        flex-direction: column;
+        width: 20vh;
+        margin-left: 4vh;
+     
+    }
+    
+    
+    
+    #ivan{
+        height: 15vh;
+    }
+    #open{
+        width: 3vh;
+        height: 2vh;
+        margin-top: -3vh;
+        margin-left: -4vh;
+    }
+    .block_hard_to_learn{
+        display: flex;
+        flex-direction: column;
+        padding-left: 4vh;
+    }
+    .education{
+        margin-top: 3vh;
+        font-size: 2vh;
+        max-width: 670px;
+    }
+    #close{
+       margin-top: 13vh;
+        width: 3vh;
+        height: 2vh;
+        margin-left: 2vh;
+        
+    }
+    .block_feedback{
+        background-color: rgb(236, 239, 241);
+        height: 50vh;
+    }
+    #feedback{
+        padding-top: 5vh;
+        margin-left: 10%;
+    }
+    footer{
+        background-color: rgb(29, 29, 29);
+        height: 40vh;
+        width: 100%;
+        
+    }
+    .block_foto_black{
+        display: flex;
+     
+        
+        
+       flex-direction: column;
+       justify-content: space-between;
+       height: 20vh;
+       color: #ffffff;
+       width: 30vh;
+       margin-right: 20vh;
+       
+    }
+    #foto_black_A{
+        width: 20vh;
+        margin-bottom: 8vh;
+    }
+    .block_footer{
+        display: flex;
+        
+    
+    }
+    .block_footer_1{
+        display: flex;
+        margin-right: 10%;
+         margin-left: 10%;
+         padding-top: 10vh;
+    }
+    .block_footer_1_1{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 15vh;
+    }
+    .block_footer_1_2{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 15vh;
+    }
+    .block_footer_1_3{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 15vh;
+    }
+    .block_footer_1_4{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    
+    .text_footer1{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 2.4vh;
+    }
+    .text_footer2{
+        color: rgb(224, 190, 36);
+        text-decoration: none;
+        font-size: 2.1vh;
+    }
+    .block_footer_2{
+        display: flex;
+       margin-top: 5vh;
+       margin-right: 10%;
+       margin-left: 10%;
+       width: 80%;
+       justify-content: space-between;
+    }</style>
+</head>
+<body>
+<header>
+  
+<div class="block_shapka">
+    <div class="block_logo">
+        <img src="acess\img\logo.png" alt="A+">
+    </div>
+   
+        <nav>
+            <ul>
+                <li class="program_obych"><a href="#"></a>Программа обучения</li>
+                <li class="program_obych"><a href="#"></a>Выпускники</li>
+                <li class="program_obych"><a href="#"></a>Кака поступить</li>
+                <li class="program_obych"><a href="#"></a>Контакты</li>
+            </ul>
+        </nav>
+  </div>
+  <div class="block_dwa_shapki">
+  <div class="zagolovok">
+    <h1>УЧЕБА ЕЩЕ НИКОГДА НЕ БЫЛА ТАКОЙ ИНТЕРЕСНОЙ!</h1>
+    <p id="Obychaem_specialistov">Обучаем готовых к трудоустройству специалистов на теоретических и практических курсах</p>
+    <button id="SHAPKA_ZAEVKA">ПОДАТЬ ЗАЯВКУ</button>
+  </div>
+  
+
+</div>
+</header> 
+<section >
+    <div class="block_paddin_headr">
+    <figure>
+<img src="acess\img\sprite1.png" alt="фото 1"><figcaption><h3>ГИБКИЙ ГРАФИК ОБУЧЕНИЯ</h3><P class="bloo_imags">Современный темп жизни требует гибкогоподхода к расписанию. </P></figcaption>
+    </figure>
+    
+    <figure><img src="acess\img\sprite2.png" alt="фото 2"><figcaption><h3>ПРАКТИЧЕСКИЕ ЗАНЯТИЯ</h3><p class="bloo_imags">На одной теории далеко не уедешь поэтому мы обучам на практике.</p></figcaption></figure>
+    <figure><img src="acess\img\sprite3.png" alt="фото 3"><figcaption><h3>НЕ ОСТАВИМ БЕЗ РАБОТЫ</h3><p class="bloo_imags">Хорошие специалисты всегда  в цене и Вы станете именно таким.</p></figcaption></figure>
+</div>
+</section> 
+<div class="block_alumni_reviews">
+    <div class="block_student_reviews">
+   <h1>отзывы выпускников</h1> <div class="block_show_all"> <h4>ПОКАЗАТЬ ВСЕ</h4><a href="#" id="show_all">...</a> </div></div>
+   <div class="block_ivan">
+    <img src="acess\img\user.jpg" id="ivan" alt="foto">
+    <div class="block_name_ivan">  <h3>Иванов Петр Сергеевич</h3><p class="education">Группа: 04-И-15 Выпуск: 2009 г.</p></div>
+    <img src="acess\img\quote-open.png" id="open" alt="*">
+    <div class="block_hard_to_learn">
+<h3>Тяжело в учении, легко в бою</h3>
+<p class="education">Во время обучения было очень тяжело, практические занятия требовали усидчивости и гибкости ума. Однако, по прошествии времени, понял, что все это было не зря! Устроился в ведущую студию своего города сразу после выпуска, а поработав там три года основал свою собственную!</p>
+ </div>
+  <img src="acess\img\quote-close.png" id="close" alt="*">
+   </div>
+</div>
+<div class="block_feedback">
+    <h1 id="feedback">ОБРАТНАЯ СВЯЗЬ</h1>
+    <div class="block_fio">
+    <input type="button" value="отправить">
+</div>
+</div>
+<footer>
+    <div class="block_footer_1">
+    <div class="block_foto_black">
+        <img src="acess\img\logo-footer.png" id="foto_black_A" alt="A+">
+        <p class="text_footer1">197101.г.Санкт-Петербург, пр.Кронверский.д.49</p>
+    </div>
+    <div class="block_footer">
+<div class="block_footer_1_1"><a href="#" class="text_footer1" >Обучение</a> <a href="#" class="text_footer2">Расписание</a><a href="#" class="text_footer2">Предметы</a><a href="#" class="text_footer2">Практика</a></div>
+<div class="block_footer_1_2"><a href="#" class="text_footer1" >Выпускники</a><a href="#" class="text_footer2">Достижения</a><a href="#" class="text_footer2">Отзывы</a><a href="#" class="text_footer2">Найти</a></div>
+<div class="block_footer_1_3"><a href="#" class="text_footer1" >Как поступить</a><a href="#" class="text_footer2">На комерцию</a><a href="#" class="text_footer2">Целевой набор</a><a href="#" class="text_footer2">На бюджет</a></div>
+<div class="block_footer_1_4"><a href="#" class="text_footer1" >контакты</a><a href="#" class="text_footer2">Обратная связь</a><a href="#" class="text_footer2">Схема проекта</a><a href="#" class="text_footer2">Телефон/факс</a></div>
+    </div>
+</div>
+<div class="block_footer_2">
+    <p class="text_footer1">Все права защищены 2015</p>
+    <p class="text_footer1">Подписчикам в соц. сетях - скидки на обучение!</p>
+    <div class="foto_fooder_2">
+    <img src="acess\img\ico-vk.png" alt="wk">
+    <img src="acess/img/ico-fb.png" alt="fb">
+    <img src="acess/img/ico-tw.png" alt="tv"></div>
+</div>
+</footer>
+</body>
+</html>
